@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/styles/atom-one-dark.min.css">
+     
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/highlight.min.js"></script>
+        
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+      rel="stylesheet"
+    />
+        <title>Page Title</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <li class="fa fa-code"></li>
+                Code viewer
+            </div>
+            <div id="al-r">
+                By NinjaGamer
+            </div>
+        </header>
+        <div id="p1">
+            <div>
+                <textarea id="code" placeholder="Enter your code">print("Hello world!")</textarea>
+                <button onclick="code()">Convert</button>
+            </div>
+        </div>
+        <div id="wpr" onclick="">
+            <li class="fa fa-maximize left" onclick="change()"></li>
+                
+            <pre><code class="hljs"># Code</code></pre>
+        </div>
+        <script>
+        
+                //code = code.replace(/</g,"&lt;")
+                var codearea = document.getElementsByClassName("hljs")[0]
+                
+                
+            function code()
+            {
+                var codes = document.getElementById("code").value
+                codes = hljs.highlightAuto(codes).value
+
+                codearea.innerHTML = "# Code\n"+codes
+
+            }
+            
+            
+            
+            var flag=false
+
+            function change()
+            {
+            clearInterval(t)
+            var wpr = document.getElementById("wpr")
+            flag = !flag
+            if(flag)
+            {
+                
+                wpr.style.top="25px"
+                codearea.style.height="89.1vh"
+            }
+            else
+            {
+                
+                wpr.style.top="60.55vh"
+               var t = setTimeout(()=>{ 
+               codearea.style.height="32.6vh"
+            },400)
+            }
+            }
+            
+        </script>
+    </body>
+</html>
