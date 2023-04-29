@@ -1,0 +1,89 @@
+body {
+    margin:0;
+    background:rgb(240,240,240);
+    position:fixed;
+    width:100%;
+    
+}
+*
+{
+    font-family:Nunito;
+}
+header
+{
+    background:rgb(30,30,40);
+    padding:15px;
+    color:white;
+    display:flex;
+}
+header>div
+{
+    width:100%;
+}
+#al-r
+{
+    color:rgb(50,194,103);
+    text-align:right;
+}
+#p1
+{
+    margin:20px;
+}
+textarea
+{
+    width:90%;
+    left:50%;
+    position:relative;
+    transform:translate(-50%);
+    height:30vh;
+    padding:15px;
+    background:transparent;
+    outline:none;
+}
+button{
+    width:100%;
+    background:rgb(50,194,103);
+    color:white;
+    border:none;
+    box-shadow:0px 5px rgb(30,120,83);
+    border-radius:10px;
+    height:40px;
+    outline:none;
+}
+button:active
+{
+    transform:translate(0px,5px);
+    box-shadow:none;
+}
+pre
+{
+    margin:0;
+}
+code
+{
+    margin:0;
+    overflow-y:scroll;
+    height:32.6vh;
+    position:relative;
+    top:0px;
+}
+.left
+{
+    position:relative;
+    left:90%;
+    transform:translate(0px,50px);
+    display:inline-block;
+    z-index:1090;
+    color:white;
+    background:rgba(255,255,255,0.2);
+    padding:5px;
+    border-radius:2.5px;
+}
+#wpr
+{
+    position:absolute;
+    width:100%;
+    transition:top 0.4s;
+    top:60.55vh;
+    padding:0px;
+}
